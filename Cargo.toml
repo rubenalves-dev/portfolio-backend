@@ -1,0 +1,11 @@
+[package]
+name = "portfolio"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+dotenvy = "0.15.7"
+kernel-runtime = { git = "ssh://git@github.com/vanta-studio/rs-kernel.git", tag = "v0.1.2" }
+mod-audit = { git = "ssh://git@github.com/vanta-studio/rs-kernel.git", tag = "v0.1.2" }
+mod-identity = { git = "ssh://git@github.com/vanta-studio/rs-kernel.git", tag = "v0.1.2" }
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
